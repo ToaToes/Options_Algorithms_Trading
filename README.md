@@ -4,7 +4,7 @@ Algorithm trading for options put and call decision
 ### Learning Options
 # _期权价格 = 内在价值 + 时间价值_
 
-核心：期权价格由“定价模型”决定，不是由“买卖人数”决定
+## **核心：期权价格由“定价模型”决定，不是由“买卖人数”决定**
 
 期权市场有做市商和套利者，他们使用期权定价模型（如Black-Scholes）来报价。模型中最重要的五个参数是：
 ```
