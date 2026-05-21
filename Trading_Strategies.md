@@ -66,6 +66,11 @@ OTM 期权可能快速归零
 Delta: 
     标的价格变化 $1，<br>
     期权价格变化多少。<br>
+概率含义:
+    ATM：
+    delta ≈ 0.5
+    通常可粗略理解：
+    到期 ITM 概率约 50%
 
 
 ### 项目1：Greeks Calculator
