@@ -7,20 +7,66 @@ Directional	              用期权表达看涨跌	            中
 Statistical Arbitrage	    skew / term structure	    很高
 ```
 
-处理数据：
+## 处理数据：
 ```
-strike
-expiry
-IV
+strike（行权价）
+expiry（到期日）
+IV（隐含波动率）
 Greeks: (Black-Scholes)
-    Delta
-    Gamma
-    Theta
-    Vega
-bid/ask
-open interest
-volume
+    Delta（）
+    Gamma（Delta 变化速率）
+    Theta（时间流逝造成的损耗）
+    Vega（IV变化率）
+bid/ask（愿意买卖价格）
+open interest（OI当前未平仓合约）
+volume（成交量）
 ```
+### Strike
+```
+Call：
+Strike 越低 → 越贵
+Strike 越高 → 越便宜
+Put：
+Strike 越高 → 越贵
+Strike 越低 → 越便宜
+```
+### Expiry
+```
+时间越长：
+期权通常越贵
+因为有更多时间让价格波动
+临近到期：
+Theta decay（时间损耗）加速
+OTM 期权可能快速归零
+```
+### IV
+```
+市场预期未来会波动多大。
+    IV 高意味着
+    市场认为：
+    未来可能大涨大跌
+    风险高
+    不确定性高
+    例如：
+    财报前
+    CPI
+    黑天鹅
+波动越大，
+期权赚钱概率越高。
+    IV Crush（非常重要）
+    财报后经常发生：
+    事件结束：
+    不确定性消失
+    IV 暴跌
+    即使方向对：
+    期权也可能亏钱
+```
+### Greeks
+期权价格对各种因素变化的敏感度。
+Delta: 
+    标的价格变化 $1，<br>
+    期权价格变化多少。<br>
+
 
 ### 项目1：Greeks Calculator
 ```
