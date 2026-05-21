@@ -57,3 +57,15 @@ ITM	    In The Money	        实值	        立即行权有价值
 ATM	    At The Money	        平值	        行权价≈当前价格
 OTM	    Out of The Money	    虚值	        立即行权没价值
 ```
+```
+Call
+股价 vs 行权价	状态
+股价 > 行权价	ITM
+股价 ≈ 行权价	ATM
+股价 < 行权价	OTM
+Put
+股价 vs 行权价	状态
+股价 < 行权价	ITM
+股价 ≈ 行权价	ATM
+股价 > 行权价	OTM
+```
