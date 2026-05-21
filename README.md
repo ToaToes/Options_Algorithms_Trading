@@ -52,8 +52,8 @@ Q：卖方除了收权利金，还能以什么形式获得收入？
 
 在期权（Options）里，ITM / ATM / OTM 是描述期权“行权价（Strike Price）”相对于标的资产当前价格位置的术语。
 ```
-缩写	    英文	        中文	        核心意思
+缩写	    英文	                  中文	        核心意思
 ITM	    In The Money	        实值	        立即行权有价值
 ATM	    At The Money	        平值	        行权价≈当前价格
-OTM	    Out of The Money	        虚值	        立即行权没价值
+OTM	    Out of The Money	    虚值	        立即行权没价值
 ```
