@@ -62,16 +62,58 @@ OTM 期权可能快速归零
     期权也可能亏钱
 ```
 ### Greeks
-期权价格对各种因素变化的敏感度。
-Delta: 
+期权价格对各种因素变化的敏感度。<br>
+**Delta**: <br>
     标的价格变化 $1，<br>
     期权价格变化多少。<br>
-概率含义:
-    ATM：
-    delta ≈ 0.5
-    通常可粗略理解：
-    到期 ITM 概率约 50%
+概率含义:<br>
+    ATM：<br>
+    delta ≈ 0.5<br>
+    通常可粗略理解：<br>
+    到期 ITM 概率约 50%<br>
 
+**Gamma**:<br>
+    股票动一点，<br>
+    Delta 会变多少。<br>
+```
+Gamma 高的影响
+近到期 ATM：
+Gamma 最大。
+意味着：
+    盈亏变化极快
+    可能瞬间从亏损变盈利
+做市商 Gamma Hedging
+Gamma 会影响：
+    market maker 对冲
+    squeeze
+    pinning
+这也是：
+    “Gamma squeeze”来源。
+```
+**Vega**<br>
+代表：<br>
+    IV 变化 1%，<br>
+    期权价格变化多少。<br>
+Vega 高<br>
+    意味着：<br>
+    期权对 IV 非常敏感。<br>
+Vega 最大<br>
+    通常：<br>
+    长期期权<br>
+    ATM<br>
+财报交易核心<br>
+```
+财报前：
+    Vega 风险极大
+    IV inflate
+财报后：
+    Vega collapse
+    IV crush
+```
+
+
+
+------------------------------------------------
 
 ### 项目1：Greeks Calculator
 ```
